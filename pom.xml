@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tuana9a</groupId>
-    <artifactId>learn-java-advance</artifactId>
-    <version>1.0</version>
+    <artifactId>learn-java</artifactId>
+    <version>1.0.0</version>
 
     <dependencies>
         <dependency>
