@@ -1,10 +1,11 @@
 package com.tuana9a.annotation;
 
 @Builder
-public class TestAnnotation1 {
+public class Person {
 
     private String name;
     private int age;
+    private String address;
 
     public void setName(String name) {
         this.name = name;
@@ -14,12 +15,16 @@ public class TestAnnotation1 {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "TestAnnotation1{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    public void setAddress(String address) {
+        this.address = address;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name=" + name +
+                ", age=" + age +
+                ", address=" + address +
+                '}';
+    }
 }

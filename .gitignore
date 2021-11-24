@@ -23,3 +23,7 @@ cmake-build-*/
 .idea/*
 out/*
 target/*
+
+# custom
+
+annotations/target/*
