@@ -1,4 +1,4 @@
-package com.tuana9a.io.cli;
+package com.tuana9a.cli;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,26 +7,25 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CmdHelper {
+public class CmdRunner {
     private final String command;
     private final File workingDir;
     private List<String> results;
 
-    public CmdHelper(String command) {
+    public CmdRunner(String command) {
         this(command, System.getProperty("user.home"));
     }
 
-    public CmdHelper(String command, File workingDir) {
+    public CmdRunner(String command, File workingDir) {
         this.command = command;
         this.workingDir = workingDir;
     }
 
-    public CmdHelper(String command, String workingDir) {
+    public CmdRunner(String command, String workingDir) {
         this(command, new File(workingDir));
     }
 
-
-    public List<String> exec() throws IOException {
+    public List<String> run() throws IOException {
         Process process = Runtime.getRuntime().exec("cmd /c " + command, null, workingDir);
         results = getConsoleLog(process);
         return results;

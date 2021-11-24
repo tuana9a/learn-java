@@ -2,7 +2,7 @@ package com.tuana9a.other;
 
 import java.io.*;
 
-public class Utility {
+public class Utils {
     public static String loadTextFile(String filePath) {
         InputStream is = null;
         String stringData = null;

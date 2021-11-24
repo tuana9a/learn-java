@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TextHelperIO {
+public class TextFileProcess {
 
     public static List<String> read(String path) {
         return read(new File(path));

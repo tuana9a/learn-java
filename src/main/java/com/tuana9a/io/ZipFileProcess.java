@@ -9,7 +9,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-public class ZipHelperIO {
+public class ZipFileProcess {
 
     //SECTION: zip
     public static void zipFiles(File[] files, String outputPath) throws IOException {
