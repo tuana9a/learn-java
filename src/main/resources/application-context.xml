@@ -10,23 +10,23 @@
 >
     <context:component-scan base-package="com.gemdino.learnspring"/>
 
-    <bean id="car" class="com.tuana9a.spring.model.Car">
+    <bean id="car" class="com.tuana9a.learnspring.model.Car">
         <property name="tyre" ref="tyre"/>
     </bean>
 
-    <bean id="car1" class="com.tuana9a.spring.model.Car">
+    <bean id="car1" class="com.tuana9a.learnspring.model.Car">
         <constructor-arg value="Honda Lead 1000"/>
     </bean>
 
-    <bean id="tyre" class="com.tuana9a.spring.model.Tyre">
+    <bean id="tyre" class="com.tuana9a.learnspring.model.Tyre">
         <property name="brand" value="Honda"/>
     </bean>
 
-    <bean id="tyre1" class="com.tuana9a.spring.model.Tyre">
+    <bean id="tyre1" class="com.tuana9a.learnspring.model.Tyre">
         <property name="brand" value="Honda"/>
     </bean>
 
-    <bean id="tyre2" class="com.tuana9a.spring.model.Tyre">
+    <bean id="tyre2" class="com.tuana9a.learnspring.model.Tyre">
         <property name="brand" value="Lamborghini"/>
     </bean>
 

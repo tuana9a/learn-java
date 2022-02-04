@@ -36,7 +36,7 @@
                     <target>8</target>
                     <annotationProcessors>
                         <annotationProcessor>
-                            com.tuana9a.annotation.BuilderProcessor
+                            com.tuana9a.annotations.BuilderProcessor
                         </annotationProcessor>
                     </annotationProcessors>
                 </configuration>

@@ -1,12 +1,13 @@
 # info
 my learning java
 
-# NOTE
+# structure
 
-There is nested module call annotations in this project
+project này có submodule nằm trong `java_modules/`
 
-for annotation processor to work properly
+có thể load project submodule độc lập hoặc load chung vào cùng 1 project cũng được
 
-you need to first install the annotations package first
+để sử dụng annotations thì cần install module annotations ở local bằng maven trước
 
-then compile the learn-java package to use @Builder
+sau đó sẽ có thể compile module learn-java và sử dụng sau đó
+
