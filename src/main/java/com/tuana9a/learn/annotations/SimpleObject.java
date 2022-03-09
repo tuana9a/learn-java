@@ -1,4 +1,4 @@
-package com.tuana9a.learn.annotation;
+package com.tuana9a.learn.annotations;
 
 import com.tuana9a.annotations.Builder;
 

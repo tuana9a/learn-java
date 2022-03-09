@@ -1,7 +1,5 @@
 
-package com.tuana9a.learn.annotation;
-
-import com.tuana9a.learnannotations.SimpleObjectBuilder;
+package com.tuana9a.learn.annotations;
 
 public class Main {
 
