@@ -20,10 +20,9 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-.idea/*
 out/*
 target/*
 
 # custom
 
-annotations/target/*
+java_modules/annotations/target/*
