@@ -5,19 +5,18 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class MySqlConnection {
-    public static String URL = "jdbc:mysql://localhost:3306/product";
+    private Connection connection;
 
-    public static String USER_NAME = "root";
-    public static String PASS_WORD = "Tuantai123";
-
-    public static Connection connection;
-
-    public static boolean connect() throws SQLException {
-        connection = DriverManager.getConnection(URL, USER_NAME, PASS_WORD);
+    public boolean connect(String url, String username, String password) throws SQLException {
+        connection = DriverManager.getConnection(url, username, password);
         return connection != null;
     }
 
-    public static boolean disconnect() throws SQLException {
+    public Connection getConnection() {
+        return connection;
+    }
+
+    public boolean disconnect() throws SQLException {
         if (connection == null) return true;
 
         connection.close();
